@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin:0;
+}
+
+.dc, .marvel {
+  margin:  20px auto;
+  width: 450px;
+}
+
+.marvel {
+  padding-left: 150px; 
+  float: left;
+}
+
+div {
+  margin-bottom: 20px;
+} 
+
+div h1 {
+  font-family: heading-font;
+  font-size: 50px;
+}
+
+.dc h1 {
+  color: #0476f2;
+  border: 3px solid #0476f2;
+}
+
+.marvel h1 {
+  color: white;
+  background-color: #f0131e;
+  border: 3px solid #f0131e;
+}
+
+div h2 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: heading-font, san-serif;
+  font-size: 30px;
+}
+
+div p {
+  padding: 20px 15px;
+  font-family: p-font;
+}
+
+.batman h2 {
+  background-color: #505c7c;
+}
+
+.batman p {
+  padding-bottom: 40px;
+  border: 5px solid #505c7c;
+}
+
+.wonder-woman h2 {
+  color: #f52a12;
+  background-color: #efd108;
+}
+
+
+.superman h2 {
+  color: #bb070e;
+  background-color: #0099f7;
+}
+
+.superman p {
+  border: 5px solid #0099f7;
+}
+
+.spiderman h2 {
+  color: #2b3784;
+  background-color: #df1f2d;
+  text-shadow: 1px 2px;
+}
+
+.spiderman p {
+  border: 5px solid #df1f2d;
+}
+
+.iron-man h2 {
+  color: #b97d10;
+  background-color: #aa0505;
+}
+
+.iron-man p {
+  border: 5px solid #aa0505;
+  padding-bottom: 75px;
+}
+
+.thor h2 {
+  color: #cc0e1d;
+  background-color: #404b56;
+}
+
+.thor p {
+  border: 5px solid #404b56;
+}
+
+@font-face {
+  font-family: heading-font;
+  src: url("BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: p-font;
+  src: url("Jost-VariableFont_wght.ttf");
+}

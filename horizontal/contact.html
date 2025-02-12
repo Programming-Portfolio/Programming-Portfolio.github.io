@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pizza Parlor</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <!--Navigation-->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="order.html">Order</a></li>
+    </ul>
+
+    <h1>Contact Page</h1>
+
+    <!--Contact Form-->
+    <form method="post" action="https://www.stonecoldprofessor.com/pizza-contact.php">
+      <label for="first-name">First Name</label>
+      <input type="text" name="first-name" id="first-name">
+
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last-name" id="last-name">
+
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      
+      <input value="clear" type="reset">
+      <input value="send" type="submit">
+    </form>
+  </body>
+</html>

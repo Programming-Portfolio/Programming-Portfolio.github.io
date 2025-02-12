@@ -1,0 +1,27 @@
+* {margin: 0; padding: 0;}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  color: #ffe5b2;
+  font-family: verdana;
+  text-shadow: 0.5px 0.5px;
+}
+a:hover, .active {
+  background-color: #ffe5b2;
+  color: #bcd7e3;
+}
+
+ul {
+  float: right;
+  background-color:  #bcd7e3;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+

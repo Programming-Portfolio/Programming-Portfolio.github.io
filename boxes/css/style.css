@@ -1,0 +1,204 @@
+/* resets browser defaults */
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+/* creates flex container, centers the body, and makes it 100% of the viewport height/width */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* this is a square which is being used as the background canvas. sets the color, size, and position to be behind all the other elements. */
+div.frame {
+  background-color: #f1c6d2;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  z-index: -2;
+}
+
+/* this is a oval which is being used for the face. makes it a flex item and centers it. sets the color, border, and size. sets the position to be before the pink canvas */ 
+div.face {
+  display: flex;
+  justify-content: center;
+  border: 10px solid #1e181A;
+  border-radius: 50%;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  z-index: -1;
+}
+
+/* a flex container for the triangles (ears). evenly spaces the triangles */
+div.ears {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* this is a white triangle which is being used as the ears. sets the position to be before the black triangle */
+div.ear {
+  width: 0;
+  height: 0;
+  border-left: 85px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 124px solid white;
+  z-index: 0;
+}
+
+/* moves the white triangle upwards and towards the left. rotates it so it's diagonal  */
+div.ear.left {
+  margin: -17px 226px 0px 0px;
+  transform: rotate(81deg);
+}
+
+/* moves the white triangle upwards and rotates it so it's diagonal */
+div.ear.right {
+  margin-top: 28px;
+  transform: rotate(160deg);
+}
+
+/* this is a black triangle which is being used as the border for the white ears. sets the position to be behind the face */
+div.ear-border {
+  width: 0;
+  height: 0;
+  border-left: 86px solid transparent;
+  border-right: 89px solid transparent;
+  border-bottom: 144px solid black;
+  z-index: -1; 
+}
+
+/* moves the black triangle upwards and towards the left. rotates it so it's diagonal */
+div.ear-border.left {
+  margin: -58px 291px 0px 0px;
+  transform: rotate(-39deg);
+}
+
+/* moves the black triangle upwards and rotates it so it's diagonal */
+div.ear-border.right {
+  margin-top: -9px;
+  transform: rotate(161deg);
+}
+
+/* a flex container for the two eyes. evenly spaces out the ovals and centers them  */
+div.eyes {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* this is an oval which is used for the eyes. sets the size and uses radius to create an oval. sets color and positions the ovals to be in the center of the face */
+div.eye {
+  width: 43px;
+  height: 55px;
+  background-color: #1e181A;
+  border-radius: 50%;
+  margin: 235px 98px 98px 80px;
+}
+
+/* this is an oval which is used for the nose. sets the size and uses radius to create an oval. sets the color and positions the oval to be slighly below the center of the face */
+div.nose {
+  width: 55px;
+  height: 43px;
+  background-color: #ffe717;
+  border-radius: 50%;
+  margin-top: 300px;
+}
+
+/* a flex container for the whiskers. spaces the whiskers so they are on opposite sides */
+div.whiskers {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* this is an odd shape used for the whiskers. sets the size, color, and curves the top right and left corners to make them look more like whiskers */
+div.whisker {
+  width: 160px;
+  height: 10px;
+  background-color: #1e181A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* sets the position for the top whiskers to be above the two whiskers */
+div.top {
+  margin: 209px 223px 0px 223px;
+}
+
+/* sets the position for the middle whiskers to be in the center of the first and last. makes the whiskers shorter and slightly rotates them to give variety */
+div.middle {
+  margin: 269px 236px 0px 236px;
+  width: 150px;
+  transform: rotate(-3.5deg);
+}
+
+/* sets the position for the bottom whiskers to be below the two whiskers */
+div.bottom {
+  margin: 326px 226px 0px 226px;
+}
+
+/* a flex container for the bow. evenly spaces out the flex items (two small circles, trapezoids)*/
+div.bow {
+  display: flex;
+  position: absolute;
+  justify-items: space-between;
+}
+
+/* this is a circle used for the center of the bow. creates a big circle with a thick border and red background. sets the position to top-right and to be the top layer */
+div.bow-center {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 10px solid white;
+  background-color: #ed164f;
+  margin: 25px 0px 0px 190px;
+  z-index: 2;
+}
+
+/* this is a circle which is used for the inner part of the bow. creates a small circle with a red background and white border. sets position to be before the trapezoid but behind center circle of the bow */
+div.inside {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ed164f;
+  border: 5px solid white;
+  z-index: 0;
+}
+
+/* sets the position for left inner circle of the bow to be left and diagonal */
+div.left.inside {
+  margin: 36px -17px 0px 161px;
+}
+
+/* sets the position for the right inner circle of the bow to be right and diagonal */
+div.right.inside {
+  margin: 73px -36px 0px 88px;
+}
+
+/* this is a trapezoid which is used for the bow. sets trapezoid width and no height and uses borders to cut the shape. sets position to be before face but below the bow circles */
+div.outside {
+  width: 148px;
+  height: 0;
+  border-bottom: 130px solid #ed164f;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  z-index: 1;
+}
+
+/* rotates the trapezoid so it's diagonal and downward facing. positions the shape left and diagonal to the bow center */
+div.left.outside {
+  transform: rotate(117deg);
+  margin: -26px 0px 0px 193px;
+}
+
+/* rotates the trapezoid so it's diagonal and upward facing. positions the shape right and diagonal to the bow center */
+div.right.outside {
+  transform: rotate(-68deg);
+  margin: 44px 0px 0px 36px;
+}
+
+
+

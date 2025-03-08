@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PieMaker</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" alt="piemaker logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="order.html">Order</a></li>
+      </ul>
+    </nav>
+
+    <main class="order-main">
+      <h1>Order Form</h1>
+      <p id="form-description">Order your custom pie by filling out the form below</p>
+
+      <form class="order-form" action="https://www.stonecoldprofessor.com/pizza-order.php" method="post">
+        <h2>Your Info</h2>
+        <div class="customer-info">
+          <div>
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first">
+          </div>
+          <div>
+            <label for="last">Last Name</label>
+            <input type="text" name="last" id="last">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="add1">Address</label>
+            <input type="text" name="add1" id="add1" required>
+          </div>
+          <div>
+            <label for="add2">Address Line 2</label>
+            <input type="text" name="add2" id="add2">
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" required>
+          </div>
+          <div>
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+              <option>select state</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+          <div>
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zip" id="zip" required>
+          </div>
+        </div>
+        <h2>Your Order</h2>
+        <fieldset>
+          <legend>pick size</legend>
+          <div>
+            <input type="radio" name="size" id="small" value="small">
+            <label for="small">small</label>
+          </div>
+          <div>
+            <input type="radio" name="size" id="medium" value="medium">
+            <label for="medium">medium</label>
+          </div>
+          <div>
+            <input type="radio" name="size" id="large" value="large">
+            <label for="large">large</label>
+          </div>
+          <div>
+            <input type="radio" name="size" id="extra-large" value="extra large">
+            <label for="extra-large">extra large</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>pick crust</legend>
+          <div>
+            <label for="crust">crust</label>
+            <select name="crust" id="crust">
+              <option>select crust</option>
+              <option value="thin">thin</option>
+              <option value="thick">thick</option>
+              <option value="pan">pan</option>
+              <option value="stuffed">stuffed</option>
+              <option value="garlic glaze">garlic glaze</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>pick toppings</legend>
+          <div>
+            <p>meat</p>
+            <div>
+              <label for="ham"><img src="img/ham.jpg" alt="ham"></label>
+              <input type="checkbox" name="toppings[]" id="ham" value="ham">
+              <label for="ham">ham</label>
+            </div>
+            <div>
+              <label for="chicken"><img src="img/grilled-chicken.jpg" alt="grilled chicken"></label>
+              <input type="checkbox" name="toppings[]" id="chicken" value="chicken">
+              <label for="chicken">chicken</label>
+            </div>
+            <div>
+              <label for="bacon"><img src="img/bacon.jpg" alt="bacon"></label>
+              <input type="checkbox" name="toppings[]" id="bacon" value="bacon">
+              <label for="bacon">bacon crumbles</label>
+            </div>
+          </div>
+          <div>
+            <p>vegetables</p>
+            <div>
+              <label for="olives"><img src="img/black-olives.jpg" alt="black olives"></label>
+              <input type="checkbox" name="toppings[]" id="olives" value="olives">
+              <label for="olives">olives</label>
+            </div>
+            <div>
+              <label for="green-pepper"><img src="img/green-pepper.jpg" alt="green bell pepper"></label>
+              <input type="checkbox" name="toppings[]" id="green-pepper" value="green-pepper">
+              <label for="green-pepper">green pepper</label>
+            </div>
+            <div>
+              <label for="mushrooms"><img src="img/mushrooms.jpg" alt="mushrooms"></label>
+              <input type="checkbox" name="toppings[]" id="mushrooms" value="mushrooms">
+              <label for="mushrooms">mushrooms</label>
+            </div>
+            <div>
+              <label for="pineapple"><img src="img/pineapple.jpg" alt="pineapple"></label>
+              <input type="checkbox" name="toppings[]" id="pineapple" value="pineapple">
+              <label for="pineapple">pineapple</label>
+            </div>
+            <div>
+              <label for="onion"><img src="img/onion.jpg" alt="yellow onions"></label>
+              <input type="checkbox" name="toppings[]" id="onion" value="onion">
+              <label for="onion">onion</label>
+            </div>
+          </div>
+          <div>
+            <p>cheese</p>
+            <div>
+              <label for="mozzarella"><img src="img/mozzarella.jpg" alt="mozzarella"></label>
+              <input type="checkbox" name="toppings[]" id="mozzarella" value="mozzarella">
+              <label for="mozzarella">mozzarella</label>
+            </div>
+            <div>
+              <label for="parmesan"><img src="img/parmesan.jpg" alt="parmesan"></label>
+              <input type="checkbox" name="toppings[]" id="parmesan" value="parmesan">
+              <label for="parmesan">parmesan</label>
+            </div>
+          </div>
+          <div>
+            <p>sauces</p>
+            <div>
+              <label for="marinara"><img src="img/marinara.jpg" alt="marinara sauce"></label>
+              <input type="checkbox" name="toppings[]" id="marinara" value="marinara sauce">
+              <label for="marinara">marinara sauce</label>
+            </div>
+            <div>
+              <label for="barbeque"><img src="img/bbq-sauce.jpg" alt="barbeque sauce"></label>
+              <input type="checkbox" name="toppings[]" id="barbeque" value="barbeque sauce">
+              <label for="barbeque">barbeque sauce</label>
+            </div>
+            <div>
+              <label for="garlic-herb"><img src="img/garlic-herb.jpg" alt="garlic herb sauce"></label>
+              <input type="checkbox" name="toppings[]" id="garlic-herb" value="garlic herb sauce">
+              <label for="garlic-herb">garlic herb sauce</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments" placeholder="your comments..."></textarea>
+        </div>
+        <div class="order-buttons">
+          <input type="reset" value="start over">
+          <input type="submit" value="order">
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div>
+        <p>Phone</p> 
+        <p>345-298-1402</p>
+      </div>
+      <div>
+        <p>Email</p>
+        <p>contact@piemaker.com</p>
+      </div>
+      <div>
+        <p>Hours</p>
+        <p>Mon-Sat 10:00 am to 9:00 pm</p>
+      </div>
+      <div>
+        <p>Location</p> 
+        <p>123 Lane Boulevard, Los Angeles, CA 39405</p>
+      </div>
+    </footer>
+  </body>
+</html>

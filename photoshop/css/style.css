@@ -1,0 +1,96 @@
+/* resets browser defaults */
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+/* makes a flex container and aligns the header, main, and section vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d3d6da;
+  padding: 6px 10px 0px 6px;
+}
+
+/* styles Wordle text */
+header div:nth-child(2) {
+  font-family: caprasimo;
+  font-size: 25px;
+  padding: 10px 20px 0px 20px;
+  text-align: center;
+}
+
+/* grid styling */
+main {
+  margin: 0 auto;
+  width: 18vw;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
+
+/* sizing the grid elements */
+main div {
+  width: 50px;
+  aspect-ratio: 1;
+  border: 1px solid #d3d6da;
+}
+
+/* keyboard styling */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+/* makes each row of keys align horizontally using flex */
+div.first-row, div.second-row, div.third-row {
+  display: flex;
+  gap: 5px;
+}
+
+/* styling the keys */
+section div div {
+  width: 40px;
+  height: 49px;
+  background-color: #d3d6da;
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 49px;
+  font-family: arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* positioning the backspace img */
+section img {
+  position: absolute;
+  left: 20%;
+  top: 17%;
+}
+
+/* positioning the backspace img relative to div */
+div#back-key {
+  position: relative;
+}
+
+/* sizing the enter and backspace keys */
+div#enter-key, div#back-key {
+  width: 70px;
+}
+
+/* importing font */
+@font-face {
+  font-family: caprasimo;
+  src: url("Caprasimo-Regular.ttf");
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MadLib</title>
+    <script src="js/script.js" defer></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="user-input">
+      <h1>MadLib Game</h1>
+      <h2>Warning by Jenny Joseph</h2>
+      <form action="javascript:void(0);">
+        When I am an old <div><input type="text" id="noun-1" placeholder="e.g. book"><label for="noun-1">noun</div></label> I shall wear<div><input type="text" id="color" placeholder="e.g. blue"><label for="color">color</label></div><br>With a red hat which doesn't go, and doesn't suit me.<br>And I shall spend my pension on brandy and summer gloves<br>And <div><input type="text" id="adj-1" placeholder="e.g. wooden"><label for="adj-1">adjective</label></div> sandals, and say we've no money for butter.<br>I shall <div><input type="text" id="verb-1" placeholder="e.g. run"><label for="verb-1">verb present tense</label></div> on the pavement when I'm tired<br>And <div><input type="text" id="verb-2" placeholder="e.g. cook"><label for="verb-2">verb present tense</label></div> up samples in shops and press alarm bells<br>And run my stick along the public railings<br>And make up for the sobriety of my youth.<br>I shall go out in my slippers in the rain<br>And pick the <div><input type="text" id="noun-2" placeholder="e.g. cars"><label for="noun-2">plural noun</label></div> in other people's gardens<br>And learn to spit.
+        <span></span>
+        You can wear <div><input type="text" id="adj-2" placeholder="e.g. small"><label for="adj-2">adjective</label></div> shirts and grow more fat<br>And eat three pounds of <div><input type="text" id="noun-3" placeholder="e.g. chairs"><label for="noun-3">plural noun</label></div> at a go<br>Or only bread and pickle for a week<br>And <div><input type="text" id="verb-3" placeholder="e.g. write"><label for="verb-3">verb present tense</label></div> pens and pencils and beermats and things in boxes. 
+        <span></span>
+        But now we must have clothes that keep us dry<br>And pay our rent and not swear in the <div><input type="text" id="noun-4" placeholder="e.g. crayon"><label for="noun-4">noun</label></div><br>And set a good example for the children.<br>We must have friends to dinner and read the papers.
+        <span></span>
+        But maybe I ought to practise a little now?<br>So people who know me are not too shocked and surprised<br>When suddenly I am old, and start to wear purple.
+
+        <div class="buttons">
+          <input onclick="play();" type="submit" value="create poem">
+          <button class="generate" onclick="generate();">generate words</button>
+        </div>
+      </form>
+    </div>
+    <div id="output">
+      <p id="title">Warning</p>
+      <div id="story"></div>
+      <p>original poem by Jenny Joseph</p>
+      <button id="button" onclick="reset();">play again</button>
+    </div>
+  </body>
+</html> 

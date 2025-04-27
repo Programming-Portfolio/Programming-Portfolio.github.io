@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+
+    <div id="start-page">
+      <form id="player-form" action="javascript:void(0);">
+        <h2>Who's playing?</h2>
+        <div>
+          <label for="player1">Player 1</label>
+          <input type="text" id="player1">
+        </div>
+        <div>
+          <label for="player2">Player 2</label>
+          <input type="text" id="player2">
+        </div>
+        <input onclick="startGame();" type="submit" value="let's play">
+      </form>
+    </div>
+
+    <div id="main-game">
+      <div>
+        <p id="output">Who's turn</p>
+        <button id="button1" onclick="createBoard();">another round?</button>
+        <button id="button2" onclick="showForm();">new game?</button>
+      </div>
+      <div id="container">
+        <div id="scoreboard">
+          <div>
+            <p id="p1-label" class="label"></p>
+            <div class="scores">
+              <div>
+                <p>win</p>
+                <p id="p1-win">0</p>
+              </div>
+              <div>
+                <p>loss</p>
+                <p id="p1-loss">0<p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p id="p2-label" class="label"></p>
+            <div class="scores">
+              <div>
+                <p>win</p>
+                <p id="p2-win">0</p>
+              </div>
+              <div>
+                <p>loss</p>
+                <p id="p2-loss">0<p>
+              </div>
+            </div>
+          </div>
+          <div class="t-score">
+            <p class="label">Ties</p>
+            <p id="ties">0</p>
+          </div>
+        </div>
+        <div id="grid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

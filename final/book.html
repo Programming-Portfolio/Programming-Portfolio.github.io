@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>5C Restaurant: Book Table</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  </head>
+  <body>
+    <div class="container" id="book-page">
+      <section class="hero">
+        <div class="nav">
+          <img src="img/logo@2x.png" width="239px" height="245px" alt="logo">
+          <label for="nav-icon"><img src="img/nav-icon.png" alt="nav icon"></label>
+          <input type="checkbox" id="nav-icon">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="active"><a class="active" href="book.html">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li class="join"><a  href="join.html">Join</a></li>
+          </ul>
+        </div>
+        <h1 class="book-h1">Book Table</h1>
+      </section>
+
+      <main class="book">
+        <h2>Reservation Form</h2>
+          <form class="book-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div>
+              <label for="number">Phone</label>
+              <input type="text" name="number" id="number">
+            </div>
+            <div>
+              <label for="guests">Guests</label>
+              <input type="text" name="guests" id="guests">
+            </div>
+            <div class="reservation">
+              <label for="reserve">Reservation day and time</label>
+              <input type="datetime-local" name="reserve" id="reserve">
+            </div>
+            <div class="text">
+              <label for="message">Any special requests?</label>
+              <textarea rows=8 name="message" id="message" placeholder="your message..."></textarea>
+            </div>
+            <div class="buttons">
+              <input value="clear" type="reset">
+              <input value="book" type="submit">
+            </div>
+          </form>
+      </main>
+
+      <footer>
+        <div>
+          <p>Phone</p>
+          <p>801-435-8940</p>
+        </div>
+        <div>
+          <p>Email</p>
+          <p>contact@5c.com</p>
+        </div>
+        <div>
+          <p>Hours</p>
+          <p>Mon-Sat 10:00am - 9:00pm</p>
+        </div>
+        <div>
+          <p>Address</p>
+          <p>123 Avenue Street, Los Angeles, CA 34093</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

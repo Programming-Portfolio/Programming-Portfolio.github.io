@@ -1,0 +1,187 @@
+* {padding: 0; margin: 0; box-sizing: border-box; }
+
+html {
+  --green: #3bba9c;
+}
+
+/* nav styling */
+nav {
+  height: 10vh;
+}
+
+.nav-margin {
+  margin-right: 70px !important;
+}
+
+.nav-link {
+  color: var(--green) !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+  transition: all 500ms ease !important;
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
+.dropdown-item.active {
+  background-color: var(--green) !important;
+}
+
+.dropdown-menu {
+  z-index: 1 !important;
+}
+
+/* main page styling */
+span {
+  color: var(--green);
+  animation: change-opacity 3s infinite alternate-reverse;
+}
+
+h1 {
+  color: var(--green) !important;
+}
+
+main div:nth-child(2) p:first-child {
+  color: var(--green) !important;
+}
+
+.main-section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section div{
+  width: 50vw;
+}
+
+.main-section div:first-child {
+  margin-left: 5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.main-section div:last-child {
+  margin-right: 5rem;
+  margin-left: 1rem;
+  padding: 2rem;
+}
+
+/* project page styling */
+.project-main {
+  height: max-content;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+section {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-color: var(--green) !important;
+}
+
+.btn {
+  background-color: var(--green) !important;
+  border: none !important;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  border: 1px solid var(--green) !important;
+  transition: all 500ms ease !important;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.project-grid div{
+  height: 290px;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+}
+
+/* animation */
+@keyframes change-opacity {
+  0% {opacity: 0.3;}
+  50% {opacity: 0.6;}
+  100% {opacity: 1;}
+}
+
+/* responsive design */
+@media only screen and (max-width: 768px) {
+  .nav-margin {
+    margin-right: 30px !important;
+    margin-top: 10px !important;
+  }
+
+  .navbar-nav {
+    padding: 10px 10px 10px 20px !important;
+    margin: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 1113px) {
+  .main-section {
+    display: block;
+    margin-top: 2rem;
+    width: 90vw;
+  }
+  .main-section div {
+    width: 90vw;
+  }
+  .main-section div:first-child {
+    margin-left: 3rem;
+  }
+  .main-section div:last-child {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+  .quote h4{
+    font-size: calc(1rem + .6vw)!important
+  }
+  .quote p{
+    font-size: 1.1rem !important;
+  }
+}
+
+@media only screen and (max-width: 637px) {
+  .fs-size {
+    font-size: 0.5rem !important;
+  }
+  .main-section div:first-child, .main-section div:last-child{
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .main-section div:first-child, .main-section div:last-child{
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .quote h4{
+    font-size: calc(1.3rem + .6vw)!important
+  }
+  .quote p{
+    font-size: 1.25rem !important;
+  }
+}

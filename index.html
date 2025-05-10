@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Portfolio: Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1>This is Hanali's page</h1>
-    <p>By the End of the semester, this page will be my FINAL PROJECT with links to ALL OF MY PROJECTS</p>
+  <body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md shadow-sm">
+      <div class="nav-margin container-fluid justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-target="#navbar" data-bs-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav bg-dark">
+            <li class="nav-item"><a class="nav-link active fs-5 fw-bold me-1" href="index.html">Home</a></li>
+            <li class="nav-item dropdown-center"><a class="nav-link dropdown-toggle fs-5 fw-bold" role="button" data-bs-toggle="dropdown" href="projects.html">Projects</a>
+              <ul class="dropdown-menu position-absolute z-3">
+                <li><a class="dropdown-item" href="projects.html">All projects</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/tables">Youtube Video</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/superheroes">Superheroes</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/boxes">Little Boxes</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/horizontal">Horizontal Menu</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/midterm">Pizza Website</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/photoshop">Photoshop to Code</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/birthday">Happy Birthday JS</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/lotto">Lotto</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/madlibs">Mad Libs</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/pizza-strap">Pizza Strap</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://programming-portfolio.github.io/ttt">Tic Tac Toe</a></li>
+                <li><a class="dropdown-item" href="projects.html">Quote Generator</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-section">
+      <div>
+        <p class="h1 mb-3 fw-bold">I'm Hanali</p>
+        <p class="fs-1 lh-sm">I learn to build <span class="fst-italic">web things</span>.<br>This is my learning journey</p>
+      </div>
+      <div>
+        <p class="h2 mb-3">CSIS1430 Reflection</p>
+        <p class="fs-size fs-5">The course was a great introduction to HTML, CSS, and JS. As an introductory course, it did a great job in teaching the basics and building a solid foundation for advanced topics.</p>
+        <p class="fs-size fs-5">I found the flipped classroom model to be quite valuable. The pre lectures allowed me to learn the basics at my own pace and solidify them in class. I enjoyed the class lectures as they were shaped by the students' questions and interests. This learning model focuses on exploration and asking questions which is an important skill for web developers.</p>
+        <p class="fs-size fs-5">I'm glad I took this course. I've come far since the start of the course, and this portfolio is proof of that. I hope to continue learning how to build web things, regardless as a hobby or a career path.</p>
+      </div>    
+    </main>
   </body>
 </html>
